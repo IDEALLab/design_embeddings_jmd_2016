@@ -1,7 +1,8 @@
 # semantic-design-languages
 Code for supporting our NSF SYS Proposal and related publications
 
-![Alt text](/glass_embedding.png)
+![Alt text](/glass.png)
+![Alt text](/airfoil.png)
 
 Edit experiment configurations in config.ini
 
