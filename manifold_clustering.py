@@ -10,7 +10,6 @@ from sklearn.decomposition import PCA
 from scipy.optimize import minimize, differential_evolution
 import math
 from itertools import cycle
-from optimizers import gradient_descent
 from util import find_gap, select_neighborhood, sort_eigen
 from intrinsic_dim import mide
 

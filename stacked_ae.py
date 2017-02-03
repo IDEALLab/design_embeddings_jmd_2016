@@ -12,7 +12,6 @@ from keras.layers import Input, Dense, noise
 from keras.models import Model
 from keras import backend as K
 #from early_stopping import MyEarlyStopping
-#from objectives import smape
 import ConfigParser
 
 def save_decoder(model, ae_id, c):
