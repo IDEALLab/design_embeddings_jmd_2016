@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Cleanup ..."
+rm -r *.pyc
+rm -r ./hp-opt/temp/*
+echo "Finished!"
