@@ -27,6 +27,8 @@ from data_processing import preprocess_features
 from metrics import smape, geo_dist_inconsistency, get_geo_dist
 from intrinsic_dim import mide
 from util import create_dir, reduce_dim, save_model, save_array
+import hp_kpca, hp_sae, hp_mlae
+
     
 def train_model(X, X_l, fs, kwargs, intr_dim, dim_F, train, test, c, save_dir, dim_increase, source):
     ''' Build model instances using optimized hyperparameters and evaluate using test data '''
@@ -129,7 +131,8 @@ if __name__ == "__main__":
     
     # Open the hyperparameter config file
     hp = ConfigParser.ConfigParser()
-    hp.read('./hp_opt/hp_%s.ini' % example_name)
+    hpname = './hp_opt/hp_%s.ini' % example_name
+    hp.read(hpname)
     
     c = 0
     for X in X_list:
@@ -174,6 +177,9 @@ if __name__ == "__main__":
         # Get optimized hyperparameters
         if kpca in fs:
             section = 'kpca'+str(c)
+            if not hp.has_section(section):
+                hp_kpca.opt()
+                hp.read(hpname)
             kwargs_kpca = {'kernel' : hp.get(section, 'kernel'),
                            'gamma'  : hp.getfloat(section, 'gamma'),\
                            'alpha'  : hp.getfloat(section, 'alpha')}
@@ -181,6 +187,9 @@ if __name__ == "__main__":
         
         if sae in fs:
             section = 'stacked_AE'+str(c)
+            if not hp.has_section(section):
+                hp_sae.opt()
+                hp.read(hpname)
             kwargs_sae = {'hidden_size_l1' : hp.getint(section, 'hidden_size_l1'),
                           'hidden_size_l2' : hp.getint(section, 'hidden_size_l2'),\
                           'hidden_size_l3' : hp.getint(section, 'hidden_size_l3'),\
@@ -192,6 +201,9 @@ if __name__ == "__main__":
         
         if mlae in fs:
             section = 'ML_AE'+str(c)
+            if not hp.has_section(section):
+                hp_mlae.opt()
+                hp.read(hpname)
             kwargs_mlae = {'hidden_size_l1' : hp.getint(section, 'hidden_size_l1'),
                            'hidden_size_l2' : hp.getint(section, 'hidden_size_l2'),\
                            'hidden_size_l3' : hp.getint(section, 'hidden_size_l3'),\
