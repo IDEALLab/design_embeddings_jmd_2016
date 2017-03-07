@@ -1,5 +1,5 @@
 # semantic-design-languages
-Code for supporting our NSF SYS Proposal and related publications
+Experiment code associated with our JMD paper: "[Design Manifolds Capture the Intrinsic Complexity and Dimension of Design Spaces](http://mechanicaldesign.asmedigitalcollection.asme.org/article.aspx?articleid=2610207)"
 
 ![Alt text](/glass.png)
 ![Alt text](/airfoil.png)
