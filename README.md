@@ -13,3 +13,16 @@ To synthesize new shapes using trained models: python synthesis.py
 The settings of the kernel PCA and autoencoders are in the configuration files in './hp-opt/hp\_\<example name\>\_\<noise scale\>.ini'
 
 We use [pySMAC](http://pysmac.readthedocs.io/en/latest/#) for hyperparameter optimization of kernel PCA and autoencoders
+
+The code is licensed under the MIT license. Feel free to use all or portions for your research or related projects so long as you provide the following citation information:
+
+Chen W, Fuge M, Chazan J. Design Manifolds Capture the Intrinsic Complexity and Dimension of Design Spaces. ASME. J. Mech. Des. 2017. doi:10.1115/1.4036134.
+
+@article{chen2017design,
+  title={Design Manifolds Capture the Intrinsic Complexity and Dimension of Design Spaces},
+  author={Chen, Wei and Fuge, Mark},
+  journal={Journal of Mechanical Design},
+  year={2017},
+  pages={to appear},
+  doi={10.1115/1.4036134}
+}
