@@ -16,7 +16,7 @@ We use [pySMAC](http://pysmac.readthedocs.io/en/latest/#) for hyperparameter opt
 
 The code is licensed under the MIT license. Feel free to use all or portions for your research or related projects so long as you provide the following citation information:
 
-Chen W, Fuge M, Chazan J. Design Manifolds Capture the Intrinsic Complexity and Dimension of Design Spaces. ASME. J. Mech. Des. 2017. doi:10.1115/1.4036134.
+Chen W, Fuge M, Chazan J. Design Manifolds Capture the Intrinsic Complexity and Dimension of Design Spaces. ASME. J. Mech. Des. 2017;139(5):051102-051102-10. doi:10.1115/1.4036134.
 
     @article{chen2017design,
       title={Design Manifolds Capture the Intrinsic Complexity and Dimension of Design Spaces},
