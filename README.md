@@ -24,7 +24,7 @@ Chen W, Fuge M, Chazan J. Design Manifolds Capture the Intrinsic Complexity and 
       journal={Journal of Mechanical Design},
       volume={139},
       number={5},
-      pages={051102},
+      pages={051102-051102-10},
       year={2017},
       publisher={American Society of Mechanical Engineers}
     }
