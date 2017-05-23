@@ -20,9 +20,11 @@ Chen W, Fuge M, Chazan J. Design Manifolds Capture the Intrinsic Complexity and 
 
     @article{chen2017design,
       title={Design Manifolds Capture the Intrinsic Complexity and Dimension of Design Spaces},
-      author={Chen, Wei and Fuge, Mark},
+      author={Chen, Wei and Fuge, Mark and Chazan, Jonah},
       journal={Journal of Mechanical Design},
+      volume={139},
+      number={5},
+      pages={051102},
       year={2017},
-      pages={to appear},
-      doi={10.1115/1.4036134}
+      publisher={American Society of Mechanical Engineers}
     }
