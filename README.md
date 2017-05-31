@@ -1,4 +1,4 @@
-# semantic-design-languages
+# Design Manifolds Capture the Intrinsic Complexity and Dimension of Design Spaces
 Experiment code associated with our JMD paper: "[Design Manifolds Capture the Intrinsic Complexity and Dimension of Design Spaces](http://mechanicaldesign.asmedigitalcollection.asme.org/article.aspx?articleid=2610207)"
 
 ![Alt text](/glass.png)
